@@ -603,7 +603,7 @@ int randomNumber(int min, int max){
     return min+ rand()%(max-min);
 }
 
-//g++ fenykardV3.cpp -lboost_system -lboost_filesystem lboost_program_options -o fenykardV3
+//g++ fenykardV3.cpp -lboost_system -lboost_filesystem lboost_program_options -lboost_date_time -o fenykardV3
 //./fenykardV3 --tasks
 //./fenykardV3 --list --database db-2018-03-10.csv
 //./fenykardV3 --simul --database db-2018-03-10.csv
