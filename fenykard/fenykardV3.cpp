@@ -86,10 +86,15 @@ int main(int argc, char* argv[])
     vector<dbline> dblines;
     vector<string> props;
     vector<string> routes;
-    routes.push_back("uCity/Debrecen/Oktatás/Informatika/Programozás/DEIK/Prog1/Példák/Előadás");
-    routes.push_back("uCity/Debrecen/Szórakozás/Könyv/Ismeretterjesztő/Informatika");
-    routes.push_back("uCity/Debrecen/Oktatás/Informatika/Programozás/Tankönyv olvasás");
-
+    routes.push_back("City/Debrecen/Oktatás/Informatika/Programozás/DEIK/Prog1/Példák/Előadás");
+    routes.push_back("City/Debrecen/Szórakozás/Könyv/Ismeretterjesztő/Informatika");
+    routes.push_back("City/Debrecen/Oktatás/Informatika/Programozás/Tankönyv olvasás");
+    routes.push_back("City/Debrecen/Szórakozás/Előadás/Ismeretterjesztő/Informatika");
+    routes.push_back("City/Debrecen/Oktatás/Informatika/Programozás/Forráskód olvasás");
+    routes.push_back("City/Debrecen/Oktatás/Informatika/Programozás/Forráskód írás");
+    routes.push_back("City/Debrecen/Oktatás/Informatika/Programozás/API doksi olvasás");
+    routes.push_back("City/Debrecen/Oktatás/Informatika/Programozás/DEIK/Prog1/Labor/Védés");
+    routes.push_back("City/Debrecen/Szórakozás/Film");
 
 
 
@@ -603,7 +608,7 @@ int randomNumber(int min, int max){
     return min+ rand()%(max-min);
 }
 
-//g++ fenykardV3.cpp -lboost_system -lboost_filesystem lboost_program_options -lboost_date_time -o fenykardV3
+//g++ fenykardV3.cpp -lboost_system -lboost_filesystem -lboost_program_options -lboost_date_time -o fenykardV3
 //./fenykardV3 --tasks
-//./fenykardV3 --list --database db-2018-03-10.csv
-//./fenykardV3 --simul --database db-2018-03-10.csv
+//./fenykardV3 --list --database db-2018-04-14.csv
+//./fenykardV3 --simul --database db-2018-04-14.csv
