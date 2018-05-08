@@ -95,6 +95,8 @@ int main(int argc, char* argv[])
     routes.push_back("City/Debrecen/Oktatás/Informatika/Programozás/API doksi olvasás");
     routes.push_back("City/Debrecen/Oktatás/Informatika/Programozás/DEIK/Prog1/Labor/Védés");
     routes.push_back("City/Debrecen/Szórakozás/Film");
+    routes.push_back("City/Debrecen/Oktatás/Informatika/Programozás/UDPROG");
+
 
 
 
@@ -103,7 +105,7 @@ int main(int argc, char* argv[])
     desc.add_options()
         ("tasks", "Kiirja a feladatokat, az értük járó pontokat, és a max. elérhető pontot")
         ("list", "Kilistázza az embereket, és a pontjaikat")
-        ("roots,r", boost::program_options::value<vector<string>> ())//->default_value(routes))
+        //("roots,r", boost::program_options::value<vector<string>> ())//->default_value(routes))
         ("database,db", boost::program_options::value<string> (), "Adatbázis helye")
         ("simul", "Szimulál egy új sorrendet")
         ("grade", "Kiirja a laboron elért jegyet");
@@ -116,7 +118,7 @@ int main(int argc, char* argv[])
 
     //if(vm.count(root))
 
-    if ( vm.count ( "roots" ) ){
+   /* if ( vm.count ( "roots" ) ){
             routes = vm["roots"].as<vector<string>>();
             
     }
@@ -126,7 +128,7 @@ int main(int argc, char* argv[])
     
     for(int i=0; i<routes.size(); i++){
         maxPont+=sumOfPoints(routes[i], counter, tasks, props);
-    }                           
+    }   */                        
         
     
 
